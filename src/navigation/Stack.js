@@ -25,7 +25,9 @@ export default props => {
                 options={{title:"Tela 2",headerTitleAlign:"center"}}
             >
                 {props => (
-                    <PassoStack {...props} voltar avancar="TelaC" >
+                    <PassoStack {...props} voltar avancar="TelaC" 
+                        avancarParams={{numero: 19}}    
+                    >
                         <TelaB></TelaB>
                     </PassoStack>
                 )}
@@ -36,7 +38,7 @@ export default props => {
             >
                 {props => (
                     <PassoStack {...props} voltar avancar="TelaC">
-                        <TelaC></TelaC>
+                        <TelaC {...props}></TelaC>
                     </PassoStack>
                 )}
             </Stack.Screen>
