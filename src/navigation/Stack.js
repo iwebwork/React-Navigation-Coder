@@ -25,7 +25,7 @@ export default props => {
                 options={{title:"Tela 2",headerTitleAlign:"center"}}
             >
                 {props => (
-                    <PassoStack {...props} avancar="TelaC">
+                    <PassoStack {...props} avancar="TelaC" voltar>
                         <TelaB></TelaB>
                     </PassoStack>
                 )}
