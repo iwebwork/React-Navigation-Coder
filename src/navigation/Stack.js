@@ -25,7 +25,7 @@ export default props => {
                 options={{title:"Tela 2",headerTitleAlign:"center"}}
             >
                 {props => (
-                    <PassoStack {...props} avancar="TelaC" voltar>
+                    <PassoStack {...props} voltar avancar="TelaC" >
                         <TelaB></TelaB>
                     </PassoStack>
                 )}
@@ -33,8 +33,12 @@ export default props => {
             <Stack.Screen 
                 name="TelaC" 
                 options={{title:"Tela 3",headerTitleAlign:"center"}}
-                component={TelaC}
             >
+                {props => (
+                    <PassoStack {...props} voltar avancar="TelaC">
+                        <TelaC></TelaC>
+                    </PassoStack>
+                )}
             </Stack.Screen>
         </Stack.Navigator>
     )
