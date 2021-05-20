@@ -13,7 +13,7 @@ export default props => {
                     onPress={() => {
                         props.navigation.openDrawer()
                         setTimeout(() =>{props.navigation.closeDrawer()},8000)
-                        setInterval(() =>{props.navigation.toggleDrawer(),8000})
+                        // setInterval(() =>{props.navigation.toggleDrawer(),8000})
                     }} 
                 />
             </View>
